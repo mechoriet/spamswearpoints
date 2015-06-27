@@ -1,0 +1,6 @@
+name: pointer
+main: me.mechoriet.spamswearpointer.main
+version: 0.0.1
+commands:
+  pointsadd:
+    description:
