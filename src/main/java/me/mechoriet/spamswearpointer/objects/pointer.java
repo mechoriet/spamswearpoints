@@ -13,7 +13,7 @@ public class pointer {
     public pointer(UUID uuid) {
         this.uuid = uuid;
     }
-    public pointer(UUID uuid,int spam,intswear) {
+    public pointer(UUID uuid,int spam,int swear) {
         this.uuid = uuid;
         this.spam = spam;
         this.swear = swear;
@@ -21,13 +21,19 @@ public class pointer {
     public Player getplayer() {
         return Bukkit.getPlayer(this.uuid);
     }
-    
+
+    public int getspampoint() {
+        return this.spam;
+    }
     public void addspampoint() {
         this.spam = this.spam + 1;
     }
     
     public void resetspampoints() {
         this.spam = 0;
+    }
+    public int getswearpoint() {
+        return this.spam;
     }
     
     public void addswearpoint() {
